@@ -1,15 +1,16 @@
 /* Style for the Register Section */
-
 body {
   margin: 0;
   padding: 0;
-  /* height: 100vh; */
-  background: url("../img/login4.jpg") no-repeat center center/cover;
-  /* background: linear-gradient(135deg, #007bff, #28a745); */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/login4.jpg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
+}
+
+input:focus {
+  border-color: #007bff;
 }
 
 .register {
@@ -17,12 +18,12 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* background-color: #f4f4f4; لون الخلفية */
   font-family: Arial, sans-serif;
+  width: 408px;
 }
 
 .register .container {
-  background: #ffffff; /* لون خلفية النموذج */
+  background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 40px;
