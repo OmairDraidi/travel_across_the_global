@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-
-    <!-- Links -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -14,10 +12,16 @@
     <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
-    <!-- Login Section -->
     <section class="login">
       <div class="container">
         <h1>Login</h1>
+        <div id="successMessage" class="message success hidden">
+          Login successful! Redirecting...
+        </div>
+        <div id="errorMessage" class="message error hidden">
+          Invalid email or password. Please try again.
+        </div>
+
         <form>
           <div class="form-group">
             <label for="email">Email</label>
@@ -39,13 +43,11 @@
               required
             />
           </div>
+          <div id="errorMessage" class="text-danger hidden"></div>
           <button type="submit">Login</button>
         </form>
-        <p>
-          Don't have an account?
-          <a href="register.html">Register here</a>
-        </p>
       </div>
     </section>
+    <script src="js/login.js"></script>
   </body>
 </html>

@@ -95,3 +95,23 @@ input:focus {
 .register p a:hover {
   text-decoration: underline;
 }
+
+.message {
+  display: none; 
+  padding: 10px;
+  margin: 15px 0;
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.message.hidden {
+  display: none; 
+}
+
+.message.visible {
+  display: block; 
+}
